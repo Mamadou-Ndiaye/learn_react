@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link,NavLink} from 'react-router-dom';
+
 
 function Menu() {
   return (
@@ -10,13 +12,13 @@ function Menu() {
         
         <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-            <a className="nav-link" href="/">Docs </a>
+                 <Link className="nav-link" to="/">Docs </Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="/tutoriel">Tutoriel</a>
+                <Link className="nav-link" to="/tutoriel">Tutoriel</Link>
             </li>
             <li className="nav-item">
-            <a className="nav-link" href="/community">Community</a>
+            <NavLink className="nav-link" to="/community/">Community</NavLink>
             </li>
         </ul>
 </nav>
